@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.CatDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_cat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_cat_half_transparent">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+
+        <TextView
+            android:id="@+id/name_cat_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/image_cat"
+            tools:text="@string/app_name">
+
+        </TextView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/name_cat_text">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/origin_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".31">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/origin"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/origin_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:lineSpacingExtra="8sp"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="United States" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/weight_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/origin_card"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".31">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/weight"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/weight_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:lineSpacingExtra="8sp"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="3 - 6" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/life_span_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/weight_card"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".31">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/life_span"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/life_span_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:lineSpacingExtra="8sp"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="12 -14" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/about_cat_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:lineSpacingExtra="8sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/details_layout"
+            tools:text="@string/bio">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cat_temp_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/temperment"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_cat_text"
+            app:layout_constraintWidth_percent=".3"
+            tools:text="@string/temperment">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cat_temp_desc_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cat_temp_text"
+            app:layout_constraintTop_toBottomOf="@+id/about_cat_text"
+            tools:text="@string/temperment">
+
+        </TextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/cat_temp_desc_text">
+
+
+            <TextView
+                android:id="@+id/adaptability_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="10dp"
+                android:text="@string/adaptability"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/adaptability_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".3"
+                tools:text="@string/adaptability">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/adaptability_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/adaptability_text"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:rating="4" />
+
+            <TextView
+                android:id="@+id/child_frd_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="10dp"
+                android:text="@string/child_friendly"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/child_frnd_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adaptability_rate"
+                app:layout_constraintWidth_percent=".3"
+                tools:text="@string/child_friendly">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/child_frnd_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/child_frd_text"
+                app:layout_constraintTop_toBottomOf="@+id/adaptability_rate"
+                tools:rating="4" />
+
+            <TextView
+                android:id="@+id/energy_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="10dp"
+                android:text="@string/energy"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/energy_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/child_frnd_rate"
+                app:layout_constraintWidth_percent=".3"
+                tools:text="@string/energy">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/energy_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/energy_text"
+                app:layout_constraintTop_toBottomOf="@+id/child_frnd_rate"
+                tools:rating="4" />
+
+            <TextView
+                android:id="@+id/inteligence_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="10dp"
+                android:text="@string/intelligence"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/inteligence_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/energy_rate"
+                app:layout_constraintWidth_percent=".3"
+                tools:text="@string/intelligence">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/inteligence_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/inteligence_text"
+                app:layout_constraintTop_toBottomOf="@+id/energy_rate"
+                tools:rating="4" />
+
+
+            <TextView
+                android:id="@+id/health_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="10dp"
+                android:text="@string/health_issues"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/health_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inteligence_rate"
+                app:layout_constraintWidth_percent=".3"
+                tools:text="@string/health_issues">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/health_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/health_text"
+                app:layout_constraintTop_toBottomOf="@+id/inteligence_rate"
+                tools:rating="4" />
+
+            <TextView
+                android:id="@+id/shedding_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="10dp"
+                android:text="@string/shedding_level"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/shedding_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/health_rate"
+                app:layout_constraintWidth_percent=".3"
+                tools:text="@string/shedding_level">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/shedding_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/shedding_text"
+                app:layout_constraintTop_toBottomOf="@+id/health_rate"
+                tools:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Syf Application</string>
+    <string name="nav_header_title">Ashish Yenugula</string>
+    <string name="nav_header_subtitle">msashish7@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_gallery">Cat Gallery</string>
+    <string name="job_name">Senior Software Developer</string>
+    <string name="bio">As an Android app developer with 6+ years of experience, I have a passion for creating beautiful and functional apps for users. I write code primarily in Kotlin, which is a popular programming language for Android development. My focus is on creating a visually appealing and intuitive user experience that makes using the app a pleasure.</string>
+    <string name="current_job_post">\u25BA RLE India Pvt Ltd</string>
+    <string name="role_desc">Logitech G mobile phone application (for iOS and Android) which will be used to control the headset. This application will be used to select the audio input sources, setting Equalization profiles, noise gates, get battery status information and over-the-air firmware updates. The application will connect to the headset via Bluetooth. We use two types of headsets like Classic and BLE connection types.</string>
+    <string name="education">\u25BA B.tech in MVGR (JNTUK)</string>
+    <string name="education_desc">Electronics and Communication Engineering, MVGR, Vizianagaram,India</string>
+    <string name="job_mobile">+91 9966889200</string>
+    <string name="job_post1">\u25BA Ojas Innovative Pvt ltd</string>
+    <string name="job_post1_desc">The Bajaj Finserv app is here to simplify your bill payments and financial needs.You can apply for personal loan, RBL credit card, EMI Card, pay bills and shop for the latest electronics and home appliances</string>
+    <string name="education_details">Education</string>
+    <string name="work_experience">Work Experience</string>
+    <string name="about">About</string>
+    <string name="job_post2">\u25BA Appetals Pvt ltd</string>
+    <string name="job_post2_desc">Gocon Shipper and Transporter are Service provider and User Applications where Truck transportation is used and tracked</string>
+    <string name="job_post3">\u25BA Synycs Enterprise Pvt ltd</string>
+    <string name="job_post3_desc"> In here i had worked on Educational Project APLL where Students can track there Attendance, Course, Events and Exams</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cat_details">Cat Details</string>
+    <string name="origin"><u>origin</u></string>
+    <string name="weight"><u>weight</u></string>
+    <string name="life_span"><u>life span</u></string>
+    <string name="temperment">Temperament</string>
+    <string name="adaptability">Adaptability</string>
+    <string name="child_friendly">Child Friendly</string>
+    <string name="energy">Energy Level</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="health_issues">Health Issues</string>
+    <string name="shedding_level">Shedding Level</string>
+</resources>
